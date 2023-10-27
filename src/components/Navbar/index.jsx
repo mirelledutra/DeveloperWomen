@@ -13,6 +13,11 @@ export default function Navbar(){
           Eventos
             </Link>
         </li>
+        <li>
+          <Link href="/cadastro">
+          Cadastrar Eventos
+            </Link>
+        </li>
       
       </ul>
     )
