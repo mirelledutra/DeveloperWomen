@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import style from "../styles/cadastro.module.css"
 
 export default function CadastrarEvento() {
     const [evento, setEvento] = useState({
@@ -8,7 +9,13 @@ export default function CadastrarEvento() {
         data: "",
         horario: "",
         local: "",
+        image: "",
+        palestrante: "",
+        palestras:"",
+        inscricoes: ""
     })
+
+
 
     function limpar()  {
         setEvento({
@@ -17,6 +24,10 @@ export default function CadastrarEvento() {
             data: "",
             horario: "",
             local: "",
+            image: "",
+            palestrante: "",
+            palestras:"",
+            inscricoes: ""
         })
     }
     function cadastrarEvento(e) {
@@ -30,12 +41,12 @@ export default function CadastrarEvento() {
     }
     return (
         <>
-
-            <h1>Cadastrar Evento</h1>
+        <div className={style.container}>
+        <h1 className={style.cadastro}>Cadastrar Evento</h1>
             <form onSubmit={e => cadastrarEvento(e)}>
                 <div>
-                    <label htmlFor="titulo">Título:</label>
-                    <input
+                    <label className={style.titulo} htmlFor="titulo">Título:</label>
+                    <input className={style.inputt}
                         type="text"
                         id="titulo"
                         value={evento.titulo}
@@ -45,8 +56,8 @@ export default function CadastrarEvento() {
                         })} />
                 </div>
                 <div>
-                    <label htmlFor="descricao">Descrição:</label>
-                    <textarea
+                    <label className={style.descricao} htmlFor="descricao">Descrição:</label>
+                    <textarea className={style.desc}
                         id="descricao"
                         value={evento.descricao}
                         onChange={e => setEvento({
@@ -57,8 +68,8 @@ export default function CadastrarEvento() {
                     </textarea>
                 </div>
                 <div>
-                    <label htmlFor="data">Data: </label>
-                    <input
+                    <label className={style.data} htmlFor="data">Data: </label>
+                    <input className={style.d}
                         type="date"
                         id="data"
                         value={evento.data}
@@ -68,20 +79,60 @@ export default function CadastrarEvento() {
                         })}
                     />
                 </div>
+                <div>
+                    <label className={style.horario}htmlFor="horario">Horário: </label>
+                    <input className={style.hr}
+                        type="horario"
+                        id="horario"
+                        value={evento.horario}
+                        onChange={e => setEvento({
+                            ...evento,
+                            horario: e.target.value
+                        })}
+                    />
+                </div>
 
 
                 <div>
-                    <label htmlFor="local">Local:</label>
-                    <input
+                    <label className={style.local}htmlFor="local">Local:</label>
+                    <input className={style.l}
                         type="text"
                         id="local"
                         value={evento.local}
                         onChange={e => setEvento({ ...evento, local: e.target.value })} />
                 </div>
+                <div>
+                    <label className={style.palestrante}htmlFor="palestrante">Palestrante: </label>
+                    <input className={style.p}
+                        type="palestrante"
+                        id="palestrante"
+                        value={evento.palestrante}
+                        onChange={e => setEvento({
+                            ...evento,
+                            palestrante: e.target.value
+                        })}
+                    />
+                </div>
+                <div>
+                <label className={style.palestras} htmlFor="palestras">Palestras:</label>
+                <textarea className={style.pl}
+                id="palestras"
+                value={evento.palestras}
+                onChange={e =>setEvento({
+                    ...evento,
+                    palestras: e.target.value
+                })}>
+    
+                </textarea>
+            </div>
 
-                <button type="submit" >Cadastrar</button>
+                <button className={style.button}type="submit" >Cadastrar</button>
             </form>
 
+
+        </div>
+
+ 
         </>
     );
 }

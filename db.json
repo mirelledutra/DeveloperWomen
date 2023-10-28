@@ -146,43 +146,15 @@
     },
     {
       "titulo": "Seminario de matematica",
-      "descricao": "jfafjajf",
-      "data": "2023-10-26",
-      "horario": "",
+      "descricao": "fjalfjajflaj",
+      "data": "2023-10-27",
+      "horario": "19:00",
       "local": "Vilhena",
+      "image": "",
+      "palestrante": "Lucineia",
+      "palestras": "afjalfjajf",
+      "inscricoes": "",
       "id": 10
-    },
-    {
-      "titulo": "Seminario de arquitetura",
-      "descricao": "fafjajfajf",
-      "data": "2023-10-26",
-      "horario": "",
-      "local": "Vilhena",
-      "id": 11
-    },
-    {
-      "titulo": "Seminario de matematica",
-      "descricao": "afjafj",
-      "data": "2023-10-26",
-      "horario": "",
-      "local": "Vilhena",
-      "id": 12
-    },
-    {
-      "titulo": "Seminario de arquitetura",
-      "descricao": "cc\\zc",
-      "data": "2023-10-27",
-      "horario": "",
-      "local": "Vilhena",
-      "id": 13
-    },
-    {
-      "titulo": "seminario informatica",
-      "descricao": "html fjafjajf",
-      "data": "2023-10-27",
-      "horario": "",
-      "local": "Vilhena",
-      "id": 14
     }
   ],
   "inscricoes": [
@@ -191,30 +163,6 @@
       "email": "mirelledutrasantos@gmail.com",
       "eventoId": 3,
       "id": 1
-    },
-    {
-      "nome": "mirelle dutra",
-      "email": "mirelledutrasantos@gmail.com",
-      "eventoId": 1,
-      "id": 2
-    },
-    {
-      "nome": "mirelle",
-      "email": "mirelledutrasantos@gmail.com",
-      "eventoId": 1,
-      "id": 3
-    },
-    {
-      "nome": "mateus",
-      "email": "mateus@gmail.com",
-      "eventoId": 1,
-      "id": 4
-    },
-    {
-      "nome": "mirelle dutra",
-      "email": "mateus@gmail.com",
-      "eventoId": 2,
-      "id": 5
     }
   ]
 }
