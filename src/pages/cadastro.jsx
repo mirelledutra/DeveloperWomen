@@ -126,7 +126,7 @@ export default function CadastrarEvento() {
                 </textarea>
             </div>
 
-                <button className={style.button}type="submit" >Cadastrar</button>
+                <button className={style.buttons}type="submit" >Cadastrar</button>
             </form>
 
 

@@ -2,8 +2,7 @@
     width: 800px;
     height: 600px;
     left:400px;
-
-    margin: 40px;
+    margin: 20px;
     padding: 20px;
     border-radius: 8px;
     align-items: center;
@@ -16,86 +15,149 @@
 
  .cadastro{
     font-size: 46px;
-    padding: 20px;
+    padding: 10px;
+
  }
 
  .titulo{
-    font-size: 20px;
-    padding: 20px;
+   font-size: 20px;
+   padding-left: 50px;
+   display: flex;
+   position: absolute;
+   margin: 10px;
+ 
+
+ 
+
+
 
  }
 .inputt{
-    width: 600px;
-    padding: 10px 10px;
-    margin-bottom: 20px;
+   display:flex;
+   font-size: 20px;
+   padding: 10px 176px;
+   margin: 10px;
+   margin-left: 135px;
 
 }
  .descricao{
- font-size: 20px;
-    
+   display:flex;
+   position: absolute;
+   font-size: 20px;
+   padding-left: 30px;
 
  }
 
  .desc{
     display:inline-flex;
+    margin-left: 90px;
     width: 600px;
-    padding: 30px 10px;
-    margin-bottom: 20px;
+    padding: 20px 10px;
+    
+
  }
  .data{
     font-size: 20px;
-    padding: 20px;
-
+    padding-left: 45px;
+    display: flex;
+    position: absolute;
+    margin: 10px;
  }
- .d{
 
+ .d{
+   display:flex;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10px;
+   margin-left: 135px;
+
+ 
+   
  }
  .horario{
-    font-size: 20px;
-    padding: 20px;
+   font-size: 20px;
+   padding-left: 45px;
+   display: flex;
+   position: absolute;
+   margin: 10px;
 
  }
  .hr{
 
+   display:flex;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10px;
+   margin-left: 135px;
+
  }
 
  .local{
-    font-size: 20px;
-    padding: 20px;
+   font-size: 20px;
+   padding-left: 45px;
+   display: flex;
+   position: absolute;
+   margin: 10px;
+
     
 
  }
  .l{
-    width: 600px;
-    padding: 10px 10px;
-    margin-bottom: 20px;
+   display:flex;
+   font-size: 20px;
+   padding: 10px;
+   margin: 10px;
+   margin-left: 135px;
+
 
  }
  .palestrante{
-    font-size: 20px;
-    padding: 20px;
-
- }
- .p{
-    width: 600px;
-    padding: 10px 10px;
-    margin-bottom: 20px;
-
- }
- .palestras{
-    font-size: 20px;
-    padding: 20px;
-
- }
- .pl{
-    display:inline-flex;
-    width: 600px;
-    padding: 30px 10px;
-    margin-bottom: 20px;
+   font-size: 20px;
+   padding-left: 1px;
+   display: flex;
+   position: absolute;
+   margin: 10px;
  
 
  }
- .button{
-    padding-bottom: 20px ;
+ .p{
+   display:flex;
+   font-size: 20px;
+   padding: 10px 176px;
+   margin: 10px;
+   margin-left: 135px;
+
 
  }
+ .palestras{
+   font-size: 20px;
+   padding-left: 1px;
+   display: flex;
+   position: absolute;
+   margin: 10px;
+
+ }
+ .pl{
+   display:flex;
+   font-size: 20px;
+   padding: 10px 182px;
+   margin: 10px;
+   margin-left: 135px;
+
+ }
+ .buttons{
+    padding: 10px 60px;
+    font-size: 20px;
+    background-color: #bdf347;
+    border: 1px solid #bdf347;
+    color:#1D2549;
+  
+ }
+
+ .buttons:hover {
+
+   background-color: transparent; 
+   border: 1px solid #bdf347;
+   color: #bdf347;
+   border-color:#bdf347; 
+}
