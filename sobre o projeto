@@ -1,0 +1,7 @@
+Projeto para cadastrar eventos, visualizar os eventos e efetuar inscrição de um determinado evento.
+
+para executar utilize:
+npm run dev
+
+para api ser executada utilize: 
+json-server --port 3020 --watch db.json
