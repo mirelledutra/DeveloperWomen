@@ -11,10 +11,11 @@ export default function CadastrarEvento() {
         local: "",
         image: "",
         palestrante: "",
-        palestras:"",
-        inscricoes: ""
+        palestras:[],
+        inscricoes: []
     })
-
+    const [mensage, setMensagem] = useState("");
+    const [exibirMensagem, setExibirMensagem] = useState(false);
 
 
     function limpar()  {
@@ -26,23 +27,47 @@ export default function CadastrarEvento() {
             local: "",
             image: "",
             palestrante: "",
-            palestras:"",
-            inscricoes: ""
-        })
+            palestras:[],
+            inscricoes: []
+        });
     }
+
+    function adicionarPalestra(novaPalestra){
+        setEvento(prevEvento => ({
+            ...prevEvento,
+            palestras:[...prevEvento.palestras, novaPalestra]
+        }));
+    
+    }
+
     function cadastrarEvento(e) {
         e.preventDefault()
         console.log(evento)
 
         axios.post('http://localhost:3020/eventos', evento)
-            .then(resultado => console.log(resultado.data))
-            .catch(erro => console.log(erro))
-            limpar()
+            .then((resultado) => {
+                console.log(resultado.data);
+                setMensagem("Evento cadastrado com sucesso!");
+                setExibirMensagem(true);
+                limpar()
+            })
+           
+            .catch ((erro) => {
+                console.log(erro);
+                setMensagem("Erro ao cadastrar o evento. Tente novamente");
+                setExibirMensagem(true);
+            })
     }
+
+    
+
+
+
     return (
         <>
         <div className={style.container}>
         <h1 className={style.cadastro}>Cadastrar Evento</h1>
+        {exibirMensagem && <p>{mensage}</p>}
             <form onSubmit={e => cadastrarEvento(e)}>
                 <div>
                     <label className={style.titulo} htmlFor="titulo">Título:</label>
@@ -82,7 +107,7 @@ export default function CadastrarEvento() {
                 <div>
                     <label className={style.horario}htmlFor="horario">Horário: </label>
                     <input className={style.hr}
-                        type="horario"
+                        type="time"
                         id="horario"
                         value={evento.horario}
                         onChange={e => setEvento({

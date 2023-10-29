@@ -28,9 +28,12 @@ export default function EventosHome(){
         <h2 className={style.subtitulo}>Palestras e Workshops</h2>
        
         <ul>
-           <p className={style.palestras}>{evento.palestras && evento.palestras.map((palestra, index)=> (
-            <li key={index}>{palestra}</li>
-           ))}</p>
+        <p className={style.palestras}>
+             {Array.isArray(evento.palestras)
+                ? evento.palestras.map((palestra, index) => <li key={index}>{palestra}</li>)
+                : <li>{evento.palestras}</li>
+         }
+           </p>
         </ul>
         <Link href={{pathname: `/inscricao/${evento.id}`}}>
         <button className={style.inscrever}>Inscreva-se</button>
